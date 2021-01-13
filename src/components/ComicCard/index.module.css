@@ -1,0 +1,51 @@
+/* * {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+} */
+
+.profile_container {
+  width: 75%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img_container {
+  font-size: 24px;
+  text-align: center;
+  width: calc(100% / 4);
+  margin: auto;
+}
+.img {
+  width: 100%;
+}
+.details_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.details_container p {
+  margin: 20px 0;
+}
+.list_character_container {
+  display: flex;
+  width: 450px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.list_creator_container {
+  display: flex;
+  width: 450px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.character_container img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+.creator_container img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}

@@ -1,0 +1,55 @@
+.container {
+  height: 320px;
+  width: calc(100% / 5);
+  flex-shrink: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.link_container {
+  color: black;
+  height: 305px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.image_container {
+  height: 65%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.name_container {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  height: 40px;
+  margin: 9px;
+}
+.options_container {
+  padding: 5px 20px;
+  border-bottom: 0.5px solid pink;
+  display: flex;
+  justify-content: space-between;
+}
+.details {
+  cursor: pointer;
+}
+.details:hover {
+  font-weight: bold;
+}
+.addtofavorite_container {
+  cursor: pointer;
+}
+.addtofavorite_container:hover .addtofavorite_icon {
+  color: red;
+}
+.addtofavorite_container:hover .addtofavorite_cta {
+  font-weight: bold;
+}
