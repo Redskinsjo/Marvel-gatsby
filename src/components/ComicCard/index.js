@@ -15,7 +15,9 @@ const ComicCard = ({ pageContext: { elem } }) => {
   const fetchCharacters = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3003/comic/" + elem.id + "/characters"
+        "https://marvel-gatsby-api.herokuapp.com/comic/" +
+          elem.id +
+          "/characters"
       )
       if (response.status === 200) {
         const chars = response.data.data.results
@@ -28,7 +30,7 @@ const ComicCard = ({ pageContext: { elem } }) => {
   const fetchCreators = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3003/comic/" + elem.id + "/creators"
+        "https://marvel-gatsby-api.herokuapp.com/comic/" + elem.id + "/creators"
       )
       if (response.status === 200) {
         const creators = response.data.data.results

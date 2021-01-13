@@ -6,13 +6,13 @@ exports.createPages = async ({ actions: { createPage } }) => {
       data: {
         data: { results: resultsChars },
       },
-    } = await axios.post("http://localhost:3003/characters")
+    } = await axios.post("https://marvel-gatsby-api.herokuapp.com/characters")
 
     const {
       data: {
         data: { results: resultsComics },
       },
-    } = await axios.post("http://localhost:3003/comics")
+    } = await axios.post("https://marvel-gatsby-api.herokuapp.com/comics")
 
     createPage({
       path: "/",
@@ -36,7 +36,9 @@ exports.createPages = async ({ actions: { createPage } }) => {
     const fetchCharacters = async elem => {
       try {
         const response = await axios.post(
-          "http://localhost:3003/comic/" + elem.id + "/characters"
+          "https://marvel-gatsby-api.herokuapp.com/comic/" +
+            elem.id +
+            "/characters"
         )
         if (response.status === 200) {
           const chars = response.data.data.results
@@ -51,7 +53,9 @@ exports.createPages = async ({ actions: { createPage } }) => {
     const fetchCreators = async elem => {
       try {
         const response = await axios.post(
-          "http://localhost:3003/comic/" + elem.id + "/creators"
+          "https://marvel-gatsby-api.herokuapp.com/comic/" +
+            elem.id +
+            "/creators"
         )
         if (response.status === 200) {
           const creators = response.data.data.results
