@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 ## Pour visiter le site
-marvel-gatsby.netlify.app
+https://marvel-gatsby.netlify.app/
 
 <p align="center">
   <a href="https://www.gatsbyjs.com">
